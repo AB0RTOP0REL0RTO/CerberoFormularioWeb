@@ -6,6 +6,16 @@ const nodemailer = require('nodemailer');
 const handlebars = require('nodemailer-express-handlebars');
 const QRCode = require('qrcode');
 const path = require('path');
+const http = require('http');
+
+const header ={
+    'Access-Control-Allow-Origin: '*',
+    'Access-Control-Allow-Methods: 'OPTIONS, POST, GET',
+    'Access-Control-Max-Age: 2592000,
+};
+
+http.createServer({req, res})=>{  
+}.listen(80);
 
 // Puerto utilizado por node.js y creación de la app con express
 const app = express();
